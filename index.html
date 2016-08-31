@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/mystyle.css">	
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   
+   <script src="js/angular.min.js"></script>
+   <script src="js/angular-route.min.js"></script>  
+   <script src="js/script.js"></script>
+   <script src="js/elemVal.js"></script>
+   
+</head>
+<body data-ng-app="demoApp2" ng-controller="mainCtrl" ng-init='showRecep : false; showAdd : false;'>
+   <div class="container">
+      <div>
+      <div id="homeTitle">
+	     <br>
+	     <img src="Tudip_Logo_medium.png" alt="Tudip's Logo" id="logo">
+		 <img src="logo.png" alt="Guestbook Logo" id="gblogo">
+		 <span id="homeHead">GuestBook!</span>
+	  </div>
+	  <div>
+	     <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+		    
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a href="#Add_Visitor">Add Visitor</a></li>
+              <li><a href="#View_Visitor">View Visitor</a></li> 
+              <li><a href="#Add_Receptionist" ng-show='showRecep'>Add Receptionist</a></li> 
+			  <li><a href="#View_Receptionist" ng-show='showRecep'>View Receptionist</a></li> 
+            </ul>
+			<ul class="nav navbar-nav navbar-right">
+               <li><a>Hi, <span class="glyphicon" id="uname"></span>..!!</a></li>
+               <li><a href="login.html"><span class="glyphicon"></span> Logout</a></li>
+            </ul>
+         </div>
+         </nav>
+		 
+	  </div>
+	  </div>
+    <div data-ng-view></div>
+	</div>
+
+</body>
+</html>

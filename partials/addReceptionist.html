@@ -1,0 +1,30 @@
+<div id="homeContent">
+   <form role="form" id="regform" ng-submit="recepFunc()">         
+      <div class="form-group">
+         <label for="recName">Receptionist's Full Name:</label>
+         <input type="text" class="form-control" id="recName" placeholder="Enter Receptionist's Name" ng-model="recName" onkeypress="javascript:return isAlphabet(event)" required>
+      </div>
+      <div class="form-group">
+         <label for="recEmail">Email:</label>
+         <input type="email" class="form-control" id="recEmail" placeholder="Enter Receptionist's Email" ng-model="recEmail" required>
+      </div>
+      <div class="form-group">
+         <label for="phoneNo">Phone Number:</label>
+         <input type="text" maxlength="10" class="form-control" id="phoneNo" placeholder="Enter Receptionist's Phone Number" ng-model="phoneNo" runat="server" onkeypress="javascript:return isNumber(event)" required>
+      </div>
+	  <div class="form-group">
+         <label for="recUserName">User Name:</label>
+         <input type="text" class="form-control" id="recUserName" placeholder="Enter Receptionist's User name" ng-model="recUserName" required>
+      </div>
+	  <div class="form-group">
+         <label for="recPwd">Password:</label>
+         <input type="password" class="form-control" id="recPwd" placeholder="Enter Password" ng-model="recPwd" required>
+      </div>
+	  <div class="form-group">
+         <label for="recPwdConfirm">Confirm Password:</label>
+         <input type="password" class="form-control" id="recPwdConfirm" placeholder="Re-Enter Password for Confirmation" ng-model="recPwdc" ng-change="confirmPass()" required>
+		 <p id="msg"></p>
+      </div>
+      <input type="submit" class="btn btn-default"/> 
+   </form>
+<div>

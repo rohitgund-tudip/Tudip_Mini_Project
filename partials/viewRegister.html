@@ -1,0 +1,34 @@
+<div id="recepContent" ng-init="viewFunc()">
+   <table class="table table-bordered table-striped table-responsive">
+      <tr>
+	     <th>Sr. No.</th>
+	     <th>Name</th>
+		 <th>Email</th>
+		 <th>Phone No</th>
+		 <th>In-Time</th>
+		 <th>Out-Time</th>
+		 <th ng-show='showAdd'>Added By</th>
+		 
+	  </tr>
+      <tr ng-repeat="x in records">
+	     <td ng-show="!show">{{x.sr_no}}</td>
+         <td ng-show="!show">{{x.visitor_name}}</td>
+		 <td ng-show="!show">{{x.email}}</td>
+		 <td ng-show="!show">{{x.phoneno}}</td>
+		 <td ng-show="!show">{{x.inTime}}</td>
+		 <td ng-show="!show">{{x.outTime}}</td>
+         <td ng-show='showAdd'>{{x.added_by}}</td>
+		 <td ng-show="show"><input type="text" value={{x.sr_no}} id="sno" ng-model="x.sr_no" disabled></td>
+		 <td ng-show="show"><input type="text" value={{x.visitor_name}} id="vname" ng-model="x.visitor_name"></td>
+		 <td ng-show="show"><input type="text" value={{x.email}} id="mail" ng-model="x.email"></td>
+		 <td ng-show="show"><input type="text" value={{x.phoneno}} id="pno" ng-model="x.phoneno"></td>
+		 <td ng-show="show"><input type="text" value={{x.inTime}} id="itime" ng-model="x.inTime"></td>
+		 <td ng-show="show"><input type="text" value={{x.outTime}} id="otime" ng-model="x.outTime"></td>
+		 <td><button type="button" ng-click="show=!show" ng-show="!show">Edit</button>
+		     <input type="button" value="Update" ng-show="show" ng-click="editVisitor()">
+	     </td>
+		 <td><button type="button" ng-click="delVis(x.sr_no)">Delete</button></td>
+      </tr>
+   </table>
+
+</div>
