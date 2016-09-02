@@ -1,0 +1,33 @@
+<div id="menu1" class="tab-pane fade">
+	  <div id="homeContent">
+	     
+      
+      <form role="form" id="regform">
+         
+         <div class="form-group">
+            <label for="visitorName">Visitor's Name:</label>
+            <input type="text" class="form-control" id="visitorName" placeholder="Enter Visitor's Name" ng-model="visitorName" required>
+         </div>
+		 <div class="form-group">
+            <label for="visitorEmail">Email:</label>
+            <input type="email" class="form-control" id="visitorEmail" placeholder="Enter Visitor's Email" ng-model="visitorEmail" required>
+         </div>
+		 <div class="form-group">
+            <label for="phoneNo">Phone Number:</label>
+            <input type="text" class="form-control" id="phoneNo" placeholder="Enter Visitor's Phone Number" ng-model="phoneNo" required>
+         </div>
+		 <div class="form-group">
+            <label for="inTime">In-time:</label>
+            <input type="text" class="form-control" id="inTime" placeholder="Enter Visitor's In-time" ng-model="inTime" required>
+         </div>
+		 <div class="form-group">
+            <label for="outTime">Out-time:</label>
+            <input type="text" class="form-control" id="outTime" placeholder="Enter Visitor's Out-time" ng-model="outTime" required>
+         </div>
+         <input type="submit" class="btn btn-default"/> 
+		 <a href="#view2">View2</a>
+      </form>
+   
+	     
+	  </div>
+    </div>

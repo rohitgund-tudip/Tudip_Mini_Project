@@ -1,0 +1,35 @@
+<div id="recepContent" ng-init="viewRecep()">
+    <table class="table table-bordered table-striped table-responsive">
+      <tr>
+	     <th>ID</th>
+	     <th>Name</th>
+		 <th>Email</th>
+		 <th>Phone No</th>
+		 <th>Username</th>
+		 <th>Password</th>
+	  </tr>
+	  
+      <tr ng-repeat="x in recepInfo| orderBy:'rec_id'">
+	     <td ng-show="!show">{{x.rec_id}}</td>
+         <td ng-show="!show">{{x.full_name}}</td>
+		 <td ng-show="!show">{{x.email}}</td>
+		 <td ng-show="!show">{{x.phoneno}}</td>
+		 <td ng-show="!show">{{x.username}}</td>
+		 <td ng-show="!show">{{x.password}}</td>
+		 <td ng-show="show"><input type="text" value={{x.rec_id}} id="r_id" ng-model="x.rec_id" disabled></td>
+		 <td ng-show="show"><input type="text" value={{x.full_name}} id="flname" ng-model="x.full_name" onkeypress="javascript:return isAlphabet(event)" required></td>
+		 <td ng-show="show"><input type="text" value={{x.email}} id="mail" ng-model="x.email" required></td>
+		 <td ng-show="show"><input type="text" maxlength="10" value={{x.phoneno}} id="pno" ng-model="x.phoneno" onkeypress="javascript:return isNumber(event)" required></td>
+		 <td ng-show="show"><input type="text" value={{x.username}} id="usrname" ng-model="x.username" required></td>
+		 <td ng-show="show"><input type="text" value={{x.password}} id="pwd" ng-model="x.password" required></td>
+		 <td><button type="button" ng-click="show=!show" ng-show="!show">Edit</button>
+		     <input type="button" value="Update" ng-show="show" ng-click="editRecep()">
+	     </td>
+		 <td><button type="button" ng-click="delRec(x.rec_id)">Delete</button></td>
+      </tr>
+   </table><br><br>
+   
+   </form>
+   </div>
+
+</div>

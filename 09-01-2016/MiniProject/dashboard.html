@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="css/mystyle.css">	
+   <script src="js/angular.min.js"></script>
+   <script src="js/angular-route.min.js"></script>  
+   <script src="js/script.js"></script>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>   
+<body>
+   <div class="container">
+      <div id="homeTitle">
+	     <br>
+	     <img src="Tudip_Logo_medium.png" alt="Tudip's Logo" id="logo">
+		 <img src="logo.png" alt="Guestbook Logo" id="gblogo">
+		 <span id="homeHead">GuestBook!</span>
+	  </div>
+	  <div>
+	     <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+		    <div class="navbar-header">
+               <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+              <li><a data-toggle="tab" href="#menu1">Add Visitor</a></li>
+              <li><a data-toggle="tab" href="#menu2">Page 2</a></li> 
+              <li><a data-toggle="tab" href="#menu3">Page 3</a></li> 
+            </ul>
+			<ul class="nav navbar-nav navbar-right">
+               <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+               <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+         </div>
+         </nav>
+		 
+		 <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+	  <div id="homeContent">
+	     
+      
+      <form role="form" id="regform">
+         
+         <div class="form-group">
+            <label for="visitorName">Visitor's Name:</label>
+            <input type="text" class="form-control" id="visitorName" placeholder="Enter Visitor's Name" ng-model="visitorName" required>
+         </div>
+		 <div class="form-group">
+            <label for="visitorEmail">Email:</label>
+            <input type="email" class="form-control" id="visitorEmail" placeholder="Enter Visitor's Email" ng-model="visitorEmail" required>
+         </div>
+		 <div class="form-group">
+            <label for="phoneNo">Phone Number:</label>
+            <input type="text" class="form-control" id="phoneNo" placeholder="Enter Visitor's Phone Number" ng-model="phoneNo" required>
+         </div>
+		 <div class="form-group">
+            <label for="inTime">In-time:</label>
+            <input type="text" class="form-control" id="inTime" placeholder="Enter Visitor's In-time" ng-model="inTime" required>
+         </div>
+		 <div class="form-group">
+            <label for="outTime">Out-time:</label>
+            <input type="text" class="form-control" id="outTime" placeholder="Enter Visitor's Out-time" ng-model="outTime" required>
+         </div>
+         <input type="submit" class="btn btn-default"/> 
+		 <a href="#view2">View2</a>
+      </form>
+   
+	     
+	  </div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+		 
+	  </div>
+	  
+	  
+      <p>hello</p>
+      <a href="#/">Return</a>
+   </div>
+
+
+</body>
+</html>

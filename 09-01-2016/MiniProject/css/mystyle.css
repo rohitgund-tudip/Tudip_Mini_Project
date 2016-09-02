@@ -1,0 +1,85 @@
+form {
+   padding: 2% 20% 10% 20%;
+   background-color: #66b3ff;
+   border: 2px solid #003366;
+   border-radius: 2%;
+   overflow: hidden;
+}
+
+#loginPage { 
+   width: 50%;
+   margin: 3% 25% 5% 25%;
+   //border: 5px solid black;
+}
+
+#formHeader {
+   //color: white;
+}
+
+#homeTitle {
+   //border:5px solid black;
+}
+
+#logo {
+   width:8%;
+}
+
+#homeHead {
+   font-size:170%;
+   color: #198798;
+}
+
+#homeContent {
+   
+   //height:500px;
+   //border:5px solid black;
+}
+
+#gblogo {
+   width:10%
+}
+
+#regform , #homeContent2 {
+   padding: 2% 20% 2% 20%;
+   background-color: #66b3ff;
+   border: 2px solid #003366;
+   border-radius: 2%;
+   overflow: hidden;
+}
+
+#inTime, #outTime {
+   width: 25%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	background-color: white;
+	
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 2%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#recepContent {
+   padding: 2% 2% 20% 2%;
+   background-color: #66b3ff;
+   border: 2px solid #003366;
+   border-radius: 2%;
+   overflow: auto;
+}
+
+#signout {
+   background-color: Transparent;
+   border: none;
+   font-size: 120%;
+   outline: none;
+}

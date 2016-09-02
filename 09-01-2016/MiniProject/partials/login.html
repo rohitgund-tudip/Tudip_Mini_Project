@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+   <script src="js/angular.min.js"></script>
+   <script src="js/angular-route.min.js"></script>  
+   <script src="js/script.js"></script>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" id="loginPage">
+      <img src="tudip.png" alt="Tudip's Logo">
+      <form role="form" ng-submit="myfunc()" id="loginform">
+         <h3 id="formHeader"><b>Login to TUDIP's Guestbook..<b></h3>
+         <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username" ng-model="username" required>
+         </div>
+         <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+         </div>
+         <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+         </div>
+         <input type="submit" class="btn btn-default"/> 
+		 <a href="#view2">View2</a>
+      </form>
+   </div>
+</body>
+</html>
